@@ -124,6 +124,47 @@
   font-family: 'Merriweather', serif;
 }
 
+.main-skills h2{
+  color: #004c9b;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skills{
+  color: #004c9b;
+  font-family: 'Merriweather', serif;
+  cursor: pointer;
+}
+
+.skills:hover{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.main-skills h3{
+  color: #004c9b;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-skills li{
+  color: #004c9b;
+  font-family: 'Merriweather', serif;
+}
+
+.carousel-footers{
+  text-align: center;
+  color: #004c9b;
+  font-size: 4rem;
+}
+
+.fa-image{
+  cursor: pointer;
+}
+
 
 
 

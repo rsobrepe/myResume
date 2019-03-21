@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
-import { Container, Col, Row, Image, Popover, OverlayTrigger, Card} from 'react-bootstrap';
+import { Container, Col, Row, Image, Popover, OverlayTrigger, Card } from 'react-bootstrap';
+import Skills from './Components/skills';
+import Projects from './Components/projects';
 import './App.css';
 
 class App extends Component {
-  render() {
+  
+  constructor(props, context) {
+    super(props, context);
 
+    this.state = {
+      open: false,
+    };
+  }
+
+  render() {
+    
     const popoverCa = (
       <Popover id="popover-ca">
         <Card>
@@ -156,6 +167,7 @@ class App extends Component {
           <hr style={{borderTop: '4px solid white', width: '100%'}}/>
         
           <Container className="main-experience-aps">
+
           <OverlayTrigger trigger="click" placement="right" overlay={popoverAps}>
             <h2 style={{fontSize:'20px'}}>L-3 Wescam-Applied Physics Specialties</h2>
           </OverlayTrigger>
@@ -183,14 +195,30 @@ class App extends Component {
                 <li>Develop and maintain desktop applications and puzzles for customer experience inside the escape room</li>
                 <li>Implent required changes and updates for Desktop Applications</li>
               </ul>
-          </Container>        
-          
+          </Container>                  
           </Col>          
 
-          <Col className="main-skills">
+        <Col className="main-skills">
           <h1>Skills</h1>
           <hr style={{borderTop: '4px solid #004c9b', width: '100%'}}/>
-          </Col>
+          <Container className="main-skills-tech">
+            <h2><u>Technical Skills</u></h2>          
+            <Skills skill="HTML" progress={100} />    
+            <Skills skill="CSS" progress={100} />
+            <Skills skill="Java" progress={100} />
+            <Skills skill="C#" progress={100} />          
+            <Skills skill="JavaScript" progress={80} />
+            <Skills skill="React.js" progress={80} />
+            <Skills skill="Python" progress={70} />
+            <Skills skill="SQL" progress={60} />
+            <Skills skill="MongoDB" progress={60} />
+          </Container>
+
+          <Container className="main-skills-proj">
+              <h2 style={{marginTop: '8px'}}><u>Projects</u></h2>
+              <Projects/>
+          </Container>         
+        </Col>
         </Row>
      </Container>
     );
