@@ -3,8 +3,6 @@ import { Container, Col, Row, Image, Popover, OverlayTrigger, Card} from 'react-
 import './App.css';
 
 class App extends Component {
- 
- 
   render() {
 
     const popoverCa = (
@@ -23,13 +21,43 @@ class App extends Component {
     )
 
     const popoverRye = (
-      <Popover id="popover-ca">
+      <Popover id="popover-rye">
         <Card>
           <Card.Img variant="top" src="assets/rye_thumb.png" />
           <Card.Body>
             <Card.Text>
             <a href="https://www.google.com/maps/place/Ryerson+University/@43.6576585,-79.3809904,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cb35431c1395:0xe8ed8bd69125d6f4!8m2!3d43.6576585!4d-79.3788017" rel="noopener noreferrer" target="_blank">
               350 Victoria St, Toronto, ON M5B 2K3
+            </a>
+            </Card.Text>
+          </Card.Body>
+         </Card>
+      </Popover>            
+    )
+
+    const popoverAps = (
+      <Popover id="popover-aps">
+        <Card>
+          <Card.Img variant="top" src="assets/aps_thumb.jpg" />
+          <Card.Body>
+            <Card.Text>
+            <a href="https://www.google.com/maps/place/Applied+Physics+Specialties/@43.725014,-79.3455684,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cd0e42c8b89b:0xc0bed18bd54cc85f!8m2!3d43.725014!4d-79.3433797" rel="noopener noreferrer" target="_blank">
+              17 Prince Andrew Pl, North York, ON M3C 2H4
+            </a>
+            </Card.Text>
+          </Card.Body>
+         </Card>
+      </Popover>            
+    )
+
+    const popoverPeg = (
+      <Popover id="popover-peg">
+        <Card>
+          <Card.Img variant="top" src="assets/peg_thumb.png" />
+          <Card.Body>
+            <Card.Text>
+            <a href="https://www.google.com/maps?q=perplexity+escape+games&rlz=1C1CHBF_enCA774CA774&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjxzr7PyJPhAhURna0KHQVVD-cQ_AUIDigB" rel="noopener noreferrer" target="_blank">
+              56 Bramsteele Rd Unit #2, Brampton, ON L6W 3M7
             </a>
             </Card.Text>
           </Card.Body>
@@ -59,7 +87,7 @@ class App extends Component {
           <ul>
             <li>raymon.p.sobrepena@gmail.com</li>
             <li>T:(647)309-0904</li>
-            <li>17 Mauve Drive, Brampton, ON L6P 2M9</li>
+            <li>17 Mauve Drive, Brampton, ON L6P 2M8</li>
           </ul>
           <div className="social-links">
                 {/*LinkedIn*/}
@@ -95,9 +123,9 @@ class App extends Component {
               <hr style={{borderTop: '4px solid #004c9b', width: '100%'}}/>
               <Container className="main-education-ca">
                 <OverlayTrigger trigger="click" placement="right" overlay={popoverCa}>
-                  <h2 style={{fontSize:'20px', cursor:'pointer'}}>Cardinal Ambrozic Catholic Secondary</h2>
+                  <h2 style={{fontSize:'20px'}}>Cardinal Ambrozic Catholic Secondary</h2>
                 </OverlayTrigger>
-                <h3 style={{fontSize:'16px', color: '#004c9b', fontStyle:'italic'}}>(2010-2014)</h3>
+                <h3>(2010-2014)</h3>
                 <p style={{fontWeight: 'bold'}}>Highlights:</p>
                 <ul>
                   <li><u>Link Crew Leader</u>: Assisted in running events for freshmans entering their first year of highschool.</li>
@@ -110,9 +138,9 @@ class App extends Component {
               <Container className="main-education-rye">
 
               <OverlayTrigger trigger="click" placement="left" overlay={popoverRye}>
-                <h2 style={{fontSize:'22px', cursor:'pointer'}}>Ryerson University</h2>
+                <h2 style={{fontSize:'22px'}}>Ryerson University</h2>
               </OverlayTrigger>
-                <h3 style={{fontSize:'16px', color: '#004c9b', fontStyle:'italic'}}>(2014-2018)</h3>
+                <h3>(2014-2018)</h3>
                 <p style={{fontWeight: 'bold'}}>Highlights:</p>
                 <ul>
                   <li><u>Ryerson Orientation Crew</u>: Guided freshmans going into first year University. Assisted with running events for first years</li>
@@ -126,8 +154,39 @@ class App extends Component {
           <Col className="main-experience">
           <h1>Experience</h1>
           <hr style={{borderTop: '4px solid white', width: '100%'}}/>
-          </Col>
+        
+          <Container className="main-experience-aps">
+          <OverlayTrigger trigger="click" placement="right" overlay={popoverAps}>
+            <h2 style={{fontSize:'20px'}}>L-3 Wescam-Applied Physics Specialties</h2>
+          </OverlayTrigger>
+
+            <h3 style={{fontSize:'18px'}}>Engineering Intern (2015-2016)</h3>          
+            <p style={{fontWeight: 'bold'}}>Contributions:</p>
+              <ul>
+                <li>Developed software to convert spreadsheet data to SolidWorks Data (AutoCAD) in Python for Engineering department use</li>                                     
+                <li>Designed required Assembly Models and Drawings using SolidWorks</li>
+                <li>Analyzed and reveiwed defected parts and developed corresponding Change Requests and Change Orders for parts</li>
+                <li>Inventory Control Support for company parts and assemblies</li>
+              </ul>
+          </Container>  
+
+          <Container className="main-experience-peg">          
+          <OverlayTrigger trigger="click" placement="left" overlay={popoverPeg}>
+            <h2 style={{fontSize:'20px'}}>Perplexity Escape Games</h2>
+          </OverlayTrigger>
+
+            <h3 style={{fontSize:'18px'}}>Manager/Developer (2016-Present)</h3>          
+            <p style={{fontWeight: 'bold'}}>Contributions:</p>
+              <ul>
+                <li>Handle Managerial duties such as: payment transactions, customer inquires, opening/closing duties</li>                                     
+                <li>Collaborate with management to gather requirements for future or current Software Developments for customer experience</li>
+                <li>Develop and maintain desktop applications and puzzles for customer experience inside the escape room</li>
+                <li>Implent required changes and updates for Desktop Applications</li>
+              </ul>
+          </Container>        
           
+          </Col>          
+
           <Col className="main-skills">
           <h1>Skills</h1>
           <hr style={{borderTop: '4px solid #004c9b', width: '100%'}}/>

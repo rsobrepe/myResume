@@ -12,7 +12,7 @@
 }
 
 .main-name h1, 
-.main-experience{
+.main-experience h1{
   padding: 1rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -90,7 +90,41 @@
   text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
+
+.main-education h2:hover{
+  opacity: 0.7;  
+}
+
+.main-education h3{
+  color: #004c9b;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.main-experience h2{
+  color: white;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-experience h3{
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.main-experience ul, 
+.main-experience li
+{
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+
+
 
 
 
