@@ -77,12 +77,22 @@
   opacity: 0.8;
 }
 
+.main-education p, 
+.main-education ul,
+.main-education li
+{
+  color: #004c9b;
+  font-family: 'Merriweather', serif; 
+}
+
 .main-education h2{
   color: #004c9b;
   text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
+
+
 
 
 
