@@ -2,32 +2,87 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  height: 100%;
+}
+.main-name, 
+.main-experience{
+  color: whitesmoke;
+  background-color: #004c9b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-name h1, 
+.main-experience{
+  padding: 1rem;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.main-education h1,
+.main-skills h1
+{
+  padding: 1rem;
+  color:  #004c9b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-education h1, 
+.main-skills h1{
+  padding: 1rem;
+  color:  #004c9b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
+
+.main-name .profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+  width: 50%;
+}
+
+.main-name p{
+  font-family: 'Merriweather', serif; 
+}
+
+.main-name li{
+  font-family: 'Merriweather', serif; 
+}
+
+.main-name li:hover{
+       transform: scale(1.05);
+}
+
+.main-name .social-links{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-name .social-links i{
+  color: whitesmoke;
+  font-size: 40px;
+  padding: 8px;
+}
+
+.main-name .social-links i:hover {
+  -webkit-transform: rotateZ(-5deg);
+  -ms-transform: rotateZ(-5deg);
+  transform: rotateZ(-5deg);
+  opacity: 0.8;
+}
+
+.main-education h2{
+  color: #004c9b;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+
+
