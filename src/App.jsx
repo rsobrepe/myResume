@@ -219,7 +219,7 @@ class App extends Component {
               <Projects/>
           </Container>         
         </Col>
-        </Row>
+      </Row>
      </Container>
     );
   }

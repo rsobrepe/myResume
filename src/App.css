@@ -93,8 +93,10 @@
   cursor: pointer;
 }
 
-.main-education h2:hover{
-  opacity: 0.7;  
+.main-education h2:hover,
+.main-experience h2:hover
+{
+  transform: scale(1.10);  
 }
 
 .main-education h3{
@@ -164,7 +166,6 @@
 .fa-image{
   cursor: pointer;
 }
-
 
 
 
