@@ -1,3 +1,8 @@
-Online resume that highlights skills and professional experience.
+Online Interactive Resume
 
-Developed using the React.js framework
+Description: Online resume to highlight skills and experience to show hiring recruiter.
+
+Key Features: 
+  Front End: HTML, CSS, React.js
+  Back End: Node.js
+  Work Space: Microsoft Visual Studio Code
