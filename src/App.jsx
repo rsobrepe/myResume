@@ -82,15 +82,12 @@ class App extends Component {
         <Row>
           <Col className="main-name">
 
-          <h1>Raymon Sobrepena</h1>
+          <h1>About</h1>
           <hr style={{borderTop: '4px solid white', width: '100%'}}/>
           <Image className="profile" src="assets/profile.jpg" rounded   />
           <hr style={{borderTop: '4px solid white', width: '100%'}}/>
           <p>
-            Aspiring developer looking to enhance skills and knowledge in programming! Proficient 
-            in many languages and main concepts of Computer Science. Though my degree in Computer Science taugh me a lot of 
-            fundamentals as well as theory, my independent projects have mainly been self taught. I pride myself
-            on being the best I can be in anything I do and looking forward to wherever Computer Science takes me!
+          Raymon Sobrepena is a Computer Science graduate from Ryerson University, where he gained skills and experience in different programming tools and languages such as Java, C#, Python, SQL and Git. He participated in several projects during his tenure in Ryerson, which ranged from Black Jack AIs to ATM Machine GUIs. Raymon strongly believes that these projects have instilled knowledge of core programming principles such as SDLC, UML and Object-Oriented Programming. Raymon is confident in his abilities to adapt, perform and maintain a level of competence that would be successful in any work environment. 
           </p>
           <hr style={{borderTop: '4px solid white', width: '100%'}}/>
           <h2 style={{fontFamily: 'Montserrat', fontWeight: 'bold'}}>Contact Info!</h2>
@@ -132,6 +129,22 @@ class App extends Component {
           <Col className="main-education">
               <h1>Education</h1>
               <hr style={{borderTop: '4px solid #004c9b', width: '100%'}}/>
+              
+              
+              <Container className="main-education-rye">
+
+              <OverlayTrigger trigger="click" placement="left" overlay={popoverRye}>
+                <h2 style={{fontSize:'22px'}}>Ryerson University</h2>
+              </OverlayTrigger>
+                <h3>(2014-2018)</h3>
+                <p style={{fontWeight: 'bold'}}>Highlights:</p>
+                <ul>
+                  <li><u>Ryerson Orientation Crew</u>: Guided freshmans going into first year University. Assisted with running events for first years</li>
+                  <li><u>Computer Science Student Society</u>: Promoted events and social events for Computer Science students</li>
+                  <li><u>Table Tennis General Manager</u>: Filled out roster and paper work for Table Tennis team. Assisted with team practices and tournaments</li>          
+                </ul>
+              </Container>
+              
               <Container className="main-education-ca">
                 <OverlayTrigger trigger="click" placement="right" overlay={popoverCa}>
                   <h2 style={{fontSize:'20px'}}>Cardinal Ambrozic Catholic Secondary</h2>
@@ -146,26 +159,27 @@ class App extends Component {
                 </ul>
               </Container>
 
-              <Container className="main-education-rye">
-
-              <OverlayTrigger trigger="click" placement="left" overlay={popoverRye}>
-                <h2 style={{fontSize:'22px'}}>Ryerson University</h2>
-              </OverlayTrigger>
-                <h3>(2014-2018)</h3>
-                <p style={{fontWeight: 'bold'}}>Highlights:</p>
-                <ul>
-                  <li><u>Ryerson Orientation Crew</u>: Guided freshmans going into first year University. Assisted with running events for first years</li>
-                  <li><u>Computer Science Student Society</u>: Promoted events and social events for Computer Science students</li>
-                  <li><u>Table Tennis General Manager</u>: Filled out roster and paper work for Table Tennis team. Assisted with team practices and tournaments</li>          
-                </ul>
-              </Container>
-
           </Col>
           
           <Col className="main-experience">
           <h1>Experience</h1>
           <hr style={{borderTop: '4px solid white', width: '100%'}}/>
         
+          <Container className="main-experience-peg">          
+          <OverlayTrigger trigger="click" placement="left" overlay={popoverPeg}>
+            <h2 style={{fontSize:'20px'}}>Perplexity Escape Games</h2>
+          </OverlayTrigger>
+
+            <h3 style={{fontSize:'18px'}}>Developer (2016-Present)</h3>          
+            <p style={{fontWeight: 'bold'}}>Contributions:</p>
+              <ul>
+                <li>Handle Managerial duties such as: payment transactions, customer inquires, opening/closing duties</li>                                     
+                <li>Collaborate with management to gather requirements for future or current Software Developments for customer experience</li>
+                <li>Develop and maintain desktop applications and puzzles for customer experience inside the escape room</li>
+                <li>Implent required changes and updates for Desktop Applications</li>
+              </ul>
+          </Container>      
+
           <Container className="main-experience-aps">
 
           <OverlayTrigger trigger="click" placement="right" overlay={popoverAps}>
@@ -180,22 +194,7 @@ class App extends Component {
                 <li>Analyzed and reveiwed defected parts and developed corresponding Change Requests and Change Orders for parts</li>
                 <li>Inventory Control Support for company parts and assemblies</li>
               </ul>
-          </Container>  
-
-          <Container className="main-experience-peg">          
-          <OverlayTrigger trigger="click" placement="left" overlay={popoverPeg}>
-            <h2 style={{fontSize:'20px'}}>Perplexity Escape Games</h2>
-          </OverlayTrigger>
-
-            <h3 style={{fontSize:'18px'}}>Manager/Developer (2016-Present)</h3>          
-            <p style={{fontWeight: 'bold'}}>Contributions:</p>
-              <ul>
-                <li>Handle Managerial duties such as: payment transactions, customer inquires, opening/closing duties</li>                                     
-                <li>Collaborate with management to gather requirements for future or current Software Developments for customer experience</li>
-                <li>Develop and maintain desktop applications and puzzles for customer experience inside the escape room</li>
-                <li>Implent required changes and updates for Desktop Applications</li>
-              </ul>
-          </Container>                  
+          </Container>              
           </Col>          
 
         <Col className="main-skills">
