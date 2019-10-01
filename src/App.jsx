@@ -3,8 +3,11 @@ import { Container, Col, Row, Image, Popover, OverlayTrigger, Card } from 'react
 import Skills from './Components/skills';
 import Projects from './Components/projects';
 import MyForm from './Components/myform';
-import './App.css';
+import './Styles/App.css';
 
+/*
+*Main app component 
+*/
 class App extends Component {
 
   constructor(props, context) {
@@ -17,6 +20,7 @@ class App extends Component {
 
   render() {
 
+    
     const popoverCa = (
       <Popover id="popover-ca">
         <Card>
@@ -217,8 +221,8 @@ class App extends Component {
             <Container className="main-skills-proj">
               <h2 style={{ marginTop: '8px' }}><u>Projects</u></h2>
               <Projects />
-              <hr style={{ borderTop: '4px solid #004c9b', width: '100%' }} />      
-              <MyForm/>
+              <hr style={{ borderTop: '4px solid #004c9b', width: '100%' }} />
+              <MyForm />
             </Container>
           </Col>
         </Row>
