@@ -20,7 +20,6 @@ class App extends Component {
 
   render() {
 
-    
     const popoverCa = (
       <Popover id="popover-ca">
         <Card>

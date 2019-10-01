@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { ProgressBar, Container } from 'react-bootstrap';
 
+/*
+*Skills component that takes input from super class and output to preferred skill format
+*/
 class Skills extends Component {
     render(){
         return(

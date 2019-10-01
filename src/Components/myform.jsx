@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Form, Container,  Button } from 'react-bootstrap';
 
+/*
+*Form component to allow user to reach out to me
+*/
 class Myform extends Component {
     render() {
         return (
